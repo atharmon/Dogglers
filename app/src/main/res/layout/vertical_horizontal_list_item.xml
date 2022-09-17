@@ -37,6 +37,50 @@
                The width should match the with of the card
                The scaleType should be set to centerCrop-->
 
+        <ImageView
+            android:id="@+id/dog_profile_pic"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="194dp"
+            android:importantForAccessibility="no" />
+
+        <TextView
+            android:id="@+id/dog_name"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dog_profile_pic"
+            android:contentDescription="Name of the dog"
+            tools:text="Tzeitel" />
+
+        <TextView
+            android:id="@+id/dog_age"
+            android:textAppearance="?attr/textAppearanceBody1"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dog_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Age: 7"/>
+
+        <TextView
+            android:id="@+id/dog_hobbies"
+            android:textAppearance="?attr/textAppearanceBody1"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dog_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Hobbies: sunbathing" />
+
         <!-- TODO: Create a TextView for each of the following:
                 The dog's name
                 The dog's age
